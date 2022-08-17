@@ -1,0 +1,52 @@
+@import "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css";
+
+.Main{
+  background-color: #0a0a0a;
+  min-height: 100vmin;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.Container {
+  border-radius: 5vmin;
+  background-color: #121212;
+  height: 50vmin;
+  width: 50vmin;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.TextBox{
+  background-color: #1c1c1c;
+  border: none;
+  border-radius: 1vmin;
+  height: 6vmin;
+  margin: 1vmin;
+  padding-left: 3vmin;
+  padding-right: 3vmin;
+  font-family: Arial, FontAwesome;
+  font-size: 3vmin;
+  font-weight: normal;
+  color: #7d7d7d;
+}
+
+.Button{
+  background-color: #00a1fe;
+  margin: 1vmin;
+  border-radius: 1vmin;
+  border: none;
+  width: 20vmin;
+  height: 6vmin;
+  font-family: Arial;
+  font-size: 3vmin;
+  font-weight: bold;
+  color: #121212;
+}
+.Button:active{
+  background-color: #026ead;
+}
+  
