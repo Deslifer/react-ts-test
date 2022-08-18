@@ -1,11 +1,11 @@
 import React from 'react';
 import './App.css';
-import Login from './components/screens/Login';
+import RoutesNavigator from './components/route/RoutesNavigator';
 
 function App() {
   return (
     <main className="App">
-      <Login/>
+      <RoutesNavigator/>
     </main>
   );
 }

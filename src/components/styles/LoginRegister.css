@@ -20,6 +20,15 @@
 
 }
 
+.Label{
+  justify-self: flex-start;
+  margin-bottom: 2vmin;
+  font-family: Arial;
+  font-size: 4vmin;
+  font-weight: normal;
+  color: #00fe61;
+}
+
 .TextBox{
   background-color: #1c1c1c;
   border: none;
@@ -35,7 +44,7 @@
 }
 
 .Button{
-  background-color: #00a1fe;
+  background-color: #00fe61;
   margin: 1vmin;
   border-radius: 1vmin;
   border: none;
@@ -47,6 +56,14 @@
   color: #121212;
 }
 .Button:active{
-  background-color: #026ead;
+  background-color: #02ad44;
+}
+
+.LinkText{
+  margin: 1vmin;
+  font-family: Arial;
+  font-size: 2vmin;
+  font-weight: normal;
+  color: #00fe61;
 }
   
