@@ -46,7 +46,6 @@ const Contacts = () => {
         const getContacts = async () =>{     
           const contactsRef = db.collection('Contacts'); 
           const data = await contactsRef.get();
-          console.log("ssss");
           setContacts(data.docs
             .filter(
               item => 
@@ -64,33 +63,8 @@ const Contacts = () => {
       }, [updateContacts]);
 
       useEffect(()=>{
-        console.log("dispatch")
         dispatch(setItems(contacts));
       }, [contacts,dispatch])
-
-      /*useEffect(() => {
-        const getContacts = async () =>{     
-          const contactsRef = db.collection('Contacts'); 
-          const data = await contactsRef.get();
-          console.log("ssss");
-          setContacts(data.docs
-            .filter(
-              item => 
-              item.data().userUID===auth.currentUser?.uid)
-            .sort((a,b)=>a.data().name.toLowerCase()<b.data().name.toLowerCase()? -1 : 1)
-            .map(
-              (doc)=>({ 
-              id: doc.id, 
-              userUID: doc.data().userUID, 
-              name: doc.data().name, 
-              number: doc.data().number
-            })
-            )
-            );
-        }
-        getContacts();
-        dispatch(setItems(contacts));
-      }, [updateContacts]);*/
 
       const AddContact = async() =>{
         const contactsRef = db.collection('Contacts');
