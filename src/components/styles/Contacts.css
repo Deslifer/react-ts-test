@@ -1,0 +1,196 @@
+@import "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css";
+ .ContactsMain{
+    background-color: #0a0a0a;
+    min-height: 100vh;
+    min-width: 100vw;
+    display: flex;
+    flex-direction: row;
+  }
+
+  .ContactContainer{
+    width: 80%;
+    height: 6vmin;
+    margin: 1vmin;
+    border-color: #aa4343;
+    border-radius: 1vmin;
+    border-style: solid;
+    display: flex;
+    justify-content: flex-start;
+    align-content: center;
+    color: #aa4343;
+  }
+  .ContactContainer:active{
+    border-color: #662727;
+    color: #662727;
+  }
+
+  .ContactText{
+    font-Size: 4vmin;
+    font-family: Arial;
+    align-self: center;
+    margin: 1vmin;
+  }
+
+  .SearchBox{
+    background-color: #1c1c1c;
+    height: 6vmin;
+    width: 80%;
+    border: none;
+    border-radius: 1vmin;
+    font-family: Arial, FontAwesome;
+    font-size: 3vmin;
+    font-weight: normal;
+    text-justify: auto;
+    color: #7d7d7d;
+    padding-left: 1vmin;
+    box-sizing: border-box;
+  }
+
+  .LogoutButton{
+    background-color: #aa4343;
+    margin-top: 3vmin;
+    margin-bottom: 1vmin;
+    border-radius: 1vmin;
+    border: none;
+    width: 20vmin;
+    height: 4vmin;
+    font-family: Arial;
+    font-size: 3vmin;
+    font-weight: bold;
+    color: #121212;
+  }
+  .LogoutButton:active{
+    background-color: #662727;
+  }
+
+  .LeftContainer{
+    border-radius: 5vmin;
+    background-color: #121212;
+    height: 100vh;
+    width: 40vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .ContactsContainer{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow: auto;
+  }
+
+  .RightContainer{
+    border-radius: 5vmin;
+    background-color: #bcccc2;
+    height: 100vh;
+    width: 60vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .AddContact{
+    position: absolute;
+    bottom: 3vh;
+    right: 63vw;
+    background-color: #aa4343;
+    border-radius: 3vmin;
+    border: none;
+    width: 6vmin;
+    height: 6vmin;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+  }
+  .AddContact:active{
+    background-color: #662727;
+  }
+
+  .EditContact{
+    position: absolute;
+    bottom: 3vh;
+    right: 3vw;
+    background-color: #065596;
+    border-radius: 3vmin;
+    border: none;
+    width: 6vmin;
+    height: 6vmin;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+  }
+  .EditContact:active{
+    background-color: #043863;
+  }
+
+  .DeleteContact{
+    position: absolute;
+    bottom: 3vh;
+    right: 9.5vw;
+    background-color: #065596;
+    border-radius: 3vmin;
+    border: none;
+    width: 6vmin;
+    height: 6vmin;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+  }
+  .DeleteContact:active{
+    background-color: #043863;
+  }
+
+  .ContactInfoContainer{
+    width: 80%;
+    height: 6vmin;
+    margin: 1vmin;
+    border-color: #065596;
+    border-radius: 1vmin;
+    border-style: solid;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    color: #065596;
+  }
+
+  .ContactTextBox{
+    background-color: #00000000;
+    border: none;
+    width: 100%;
+    font-Size: 4vmin;
+    font-family: Arial;
+    text-align: center;
+    align-self: center;
+    color: #065596;
+  }
+  .ContactTextBox:focus{
+    outline: none;
+  }
+
+  .ContactInfoText{
+    font-Size: 4vmin;
+    font-family: Arial;
+    align-self: center;
+    margin: 1vmin;
+  }
+
+  .SaveChangesButton{
+    background-color: #065596;
+    margin-top: 3vmin;
+    margin-bottom: 1vmin;
+    border-radius: 1vmin;
+    border: none;
+    width: 20vmin;
+    height: 4vmin;
+    font-family: Arial;
+    font-size: 3vmin;
+    font-weight: bold;
+    color: #bcccc2;
+  }
+  .SaveChangesButton:active{
+    background-color: #043863;
+  }
