@@ -1,12 +1,11 @@
-import "../styles/ContactModule.css"
+import '../styles/ContactModule.css';
 
-const ContactModule = () => {
-    return(
+function ContactModule() {
+  return (
     <div className="ContactModuleMain">
-        <div className="ModuleContainer" > </div>
+      <div className="ModuleContainer"> </div>
     </div>
-    );
-
+  );
 }
 
 export default ContactModule;

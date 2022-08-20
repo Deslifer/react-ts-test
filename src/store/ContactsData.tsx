@@ -1,4 +1,4 @@
-import {createSlice} from '@reduxjs/toolkit';
+import { createSlice } from '@reduxjs/toolkit';
 
 interface IContactsData {
     id: string | null,
@@ -7,28 +7,25 @@ interface IContactsData {
     number: string,
   }
 
-
-export const data = createSlice({
+export const ContactsData = createSlice({
   name: 'data',
   initialState: {
-    
+
     value: [],
     loading: false,
   },
   reducers: {
     setItems: (state, action) => {
-      state.value = action.payload.map((item:IContactsData) => {
-        return {
-          id: item.id,
-          userUID: item.userUID,
-          name: item.name,
-          number: item.number,
-        };
-      });
+      state.value = action.payload.map((item:IContactsData) => ({
+        id: item.id,
+        userUID: item.userUID,
+        name: item.name,
+        number: item.number,
+      }));
     },
   },
 });
 
-export const {setItems} = data.actions;
+export const { setItems } = ContactsData.actions;
 
-export default data.reducer;
+export default ContactsData;

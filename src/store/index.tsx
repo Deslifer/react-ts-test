@@ -1,12 +1,12 @@
-import {configureStore} from '@reduxjs/toolkit';
-import data from './ContactsData';
+import { configureStore } from '@reduxjs/toolkit';
+import ContactsData from './ContactsData';
 
 const store = configureStore({
   reducer: {
-    data: data,
+    data: ContactsData.reducer,
   },
 });
 
 export type RootState = ReturnType<typeof store.getState>;
-  
+
 export default store;
